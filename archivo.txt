@@ -1,1 +1,90 @@
-prueba
+ejercicio 1301
+
+# funciones.py:
+del prueba(x,y):
+    print(a,b)
+    x = x + 1
+    y = y + 2
+    return(x,y)
+
+# programa.py:
+from funciones import *
+
+a = int(input("Ingrese un numero entero: "))
+b = int(input("Ingrese un numero entero: "))
+
+for i in range(3):
+    print(prueba(a.b))
+    a = a + 2
+    b = b + 2
+    
+Resolucion:
+
+Datos: a=2, b=3
+
+for i in range(3) -> da 3 vueltas
+
+Vuelta 1:
+  prueba(2,3) entra
+  print(a,b) imprime 2 3
+  return devuelve (3,5)
+  print(prueba) imprime (3,5)
+  a=2+2=4
+  b=3+2=5
+
+Vuelta 2:
+  prueba(4,5)
+  imprime 4 5
+  devuelve (5,7) y se imprime (5,7)
+  a=4+2=6
+  b=5+2=7
+
+Vuelta 3:
+  prueba(6,7)
+  imprime 6 7
+  devuelve (7,9) y se imprime (7,9)
+  a=6+2=8
+  b=7+2=9
+
+Lo que se ve en pantalla:
+2 3
+(3,5)
+4 5
+(5,7)
+6 7
+(7,9)
+
+Final: a=8, b=9
+
+EJERCICIO 1302
+
+#funciones.py:
+def prueba(a,b)
+    a = a + 1
+    b = b + 2
+    return(a,b)
+
+# programa.py
+from funciones import *
+
+a = int(input("Ingrese un numero entero: "))
+b = int(input("Ingrese un numero entero: "))
+for i in range(3):
+    a, b = (prueba(a,b))
+    a = b + 2
+    b = b + 2
+
+vuelta 1:
+entra: a=2, b=3
+sale de prueba: a=3, b=5
+con +: a=5, b=7
+
+Vuelta 2:
+Entra: a=5, b=7
+Sale de prueba: a=6, b=9
+Con +2: a=8, b=11
+
+Vuelta 3:
+Entra: a=8, b=11
+Sale de prueba: a=9, b=13
+Con +2: a=11, b=15
